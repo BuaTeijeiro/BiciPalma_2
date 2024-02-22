@@ -8,11 +8,12 @@ import org.junit.Test;
 
 import edu.badpals.Bicicleta;
 
+
 public class BicicletaTest {
 
     Bicicleta bici = null;
     
-    @Before
+    @Before 
     public void setup() {
         this.bici = new Bicicleta(999);
     }
@@ -22,12 +23,12 @@ public class BicicletaTest {
         assertEquals(999, bici.getId());
     }
 
-    /* 
     @Test
     public void toStringTest() {
         assertEquals("999", bici.toString());
     }
 
+    /*
     @Test
     public void implementationMovilTest() {
         Movil movil = bici;
