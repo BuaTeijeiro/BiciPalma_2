@@ -37,6 +37,25 @@ public class AnclajeTest {
         assertEquals(999, anclaje.getBicicleta().getId());
     }
 
+    
+    @Test
+    public void liberarBiciTest() {
+        anclaje.anclarBici(bici);
+        assertEquals(999, anclaje.getBicicleta().getId());
+        assertTrue(anclaje.isOcupado());
+        anclaje.liberarBici();
+        assertEquals(null, anclaje.getBicicleta());
+        assertTrue(!anclaje.isOcupado());
+    }
+
+    @Test
+    public void toStringTest(){
+        assertEquals("libre",anclaje.toString());
+        anclaje.anclarBici(bici);
+        assertEquals("ocupado por bici de id 999",anclaje.toString());
+    }
+    
+
     /*
     @Test
     public void toStringTest() {

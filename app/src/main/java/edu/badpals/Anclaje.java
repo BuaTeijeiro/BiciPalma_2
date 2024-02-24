@@ -1,14 +1,16 @@
 package edu.badpals;
 
+import com.google.errorprone.annotations.OverridingMethodsMustInvokeSuper;
+
 public class Anclaje {
     private boolean ocupado;
     private Bicicleta bici;
 
-    public Anclaje(){
+    Anclaje(){
         this.ocupado = false;
     }
 
-    public boolean isOcupado(){
+    boolean isOcupado(){
         return this.ocupado;
     }
 
@@ -16,12 +18,26 @@ public class Anclaje {
         this.ocupado = updateOcupado;
     }
 
-    public void anclarBici(Bicicleta newBici){
-        this.bici = newBici;
-        setOcupado(true);    
+    void anclarBici(Bicicleta newBici){
+            this.bici = newBici;
+            setOcupado(true);
     }
 
-    public Bicicleta getBicicleta(){
-            return this.bici;
+    Bicicleta getBicicleta(){
+        return this.bici;
+    }
+
+    void liberarBici(){
+        this.bici = null;
+        setOcupado(false);
+    }
+
+    @Override
+    public String toString(){
+        if (ocupado) {
+            return "ocupado por bici de id " + Integer.toString(this.bici.getId());
+        } else{
+            return "libre";
+        }
     }
 }
