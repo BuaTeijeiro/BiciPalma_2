@@ -2,6 +2,7 @@ package edu.badpals;
 
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -27,7 +28,13 @@ public class AnclajeTest {
     @Test
     public void anclarBiciTest() {
         anclaje.anclarBici(bici);
-        assertEquals(true, anclaje.isOcupado());
+        assertTrue(anclaje.isOcupado());
+    }
+
+    @Test
+    public void getBicicletaTest() {
+        anclaje.anclarBici(bici);
+        assertEquals(999, anclaje.getBicicleta().getId());
     }
 
     /*

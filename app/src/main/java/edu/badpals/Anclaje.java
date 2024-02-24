@@ -18,6 +18,10 @@ public class Anclaje {
 
     public void anclarBici(Bicicleta newBici){
         this.bici = newBici;
-        setOcupado(true);
+        setOcupado(true);    
+    }
+
+    public Bicicleta getBicicleta(){
+            return this.bici;
     }
 }
