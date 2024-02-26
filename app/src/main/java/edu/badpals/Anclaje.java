@@ -30,6 +30,7 @@ public class Anclaje {
         setOcupado(false);
     }
 
+
     @Override
     public String toString(){
         if (ocupado) {
