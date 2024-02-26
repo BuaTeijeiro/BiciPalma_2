@@ -1,7 +1,5 @@
 package edu.badpals;
 
-import com.google.errorprone.annotations.OverridingMethodsMustInvokeSuper;
-
 public class Anclaje {
     private boolean ocupado;
     private Bicicleta bici;

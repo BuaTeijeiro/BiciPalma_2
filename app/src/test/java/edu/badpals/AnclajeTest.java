@@ -54,18 +54,4 @@ public class AnclajeTest {
         anclaje.anclarBici(bici);
         assertEquals("ocupado por bici de id 999",anclaje.toString());
     }
-    
-
-    /*
-    @Test
-    public void toStringTest() {
-        assertEquals("999", bici.toString());
-    }
-
-    
-    @Test
-    public void implementationMovilTest() {
-        Movil movil = bici;
-        assertEquals(999, movil.getId());
-    }*/
 }
