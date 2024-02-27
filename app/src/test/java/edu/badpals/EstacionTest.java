@@ -15,7 +15,7 @@ public class EstacionTest {
         assertEquals("id: 1 \ndireccion: Manacor \nanclajes: 6", estacion.toString());
     }
 
-    /*
+    
     @Test
     public void anclajesLibresTest() {
         Estacion estacion = new Estacion(1, "Manacor", 6);
@@ -25,6 +25,7 @@ public class EstacionTest {
         assertEquals(0, estacion.anclajesLibres());
     }
     
+    /*
     @Test
     public void anclarBicicletaTest() {
         Estacion estacion = new Estacion(1, "Manacor", 6);

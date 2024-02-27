@@ -31,4 +31,19 @@ public class Estacion {
     public String toString(){
         return "id: " + Integer.toString(this.getId()) + " \ndireccion: " + this.getDireccion() + " \nanclajes: " + this.numAnclajes();
     }
+
+    public void consultarEstacion(){
+        System.out.println(this.toString());
+    }
+
+    public int anclajesLibres(){
+        int anclajesLibres = 0;
+        for (int i = 0; i < this.numAnclajes(); i++){
+            if (!this.anclajes()[i].isOcupado()){
+                anclajesLibres++;
+            }
+        }
+
+        return anclajesLibres;
+    }
 }
