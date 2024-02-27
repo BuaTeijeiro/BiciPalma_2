@@ -11,19 +11,19 @@ public class TarjetaUsuarioTest {
 
     @Before
     public void setup(){
-        this.miTarjeta = new TarjetaUsuario(1,false);
+        this.miTarjeta = new TarjetaUsuario("1",false);
     }
 
     @Test
     public void constructorTarjetaUsuario() {
-        assertEquals(1, this.miTarjeta.getId());
+        assertEquals("1", this.miTarjeta.getId());
         assertEquals(false, this.miTarjeta.isActivada());
     }
 
     @Test
     public void setActivadaTest() {
         miTarjeta.setActivada(true);
-        assertEquals(1, this.miTarjeta.getId());
+        assertEquals("1", this.miTarjeta.getId());
         assertEquals(true, this.miTarjeta.isActivada());
     }
 

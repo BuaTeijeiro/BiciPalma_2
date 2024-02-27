@@ -1,15 +1,15 @@
 package edu.badpals;
 
 public class TarjetaUsuario {
-    int id;
+    String id;
     boolean activada;
 
-    TarjetaUsuario(int id, boolean activada){
+    TarjetaUsuario(String id, boolean activada){
         this.id = id;
         this.activada = activada;
     }
 
-    public int getId() {
+    public String getId() {
         return this.id;
     }
     public boolean isActivada(){
@@ -22,6 +22,6 @@ public class TarjetaUsuario {
 
     @Override
     public String toString(){
-        return "Tarjeta con id: " + this.getId() + " \nActivada: " + this.isActivada();
+        return "Tarjeta con id: " + this.getId() + " \nActivada: " + Boolean.toString(this.isActivada());
     }
 }

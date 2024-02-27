@@ -2,7 +2,7 @@ package edu.badpals;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
-//import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 
@@ -25,7 +25,7 @@ public class EstacionTest {
         assertEquals(0, estacion.anclajesLibres());
     }
     
-    /*
+    
     @Test
     public void anclarBicicletaTest() {
         Estacion estacion = new Estacion(1, "Manacor", 6);
@@ -40,7 +40,7 @@ public class EstacionTest {
         estacion.anclarBicicleta(new Bicicleta(911));
         assertEquals(0, estacion.anclajesLibres());
     }
-
+    
     @Test
     public void anclajesLibres_bici_anclada_Test() {
         
@@ -56,7 +56,7 @@ public class EstacionTest {
         Estacion estacion = new Estacion(1, "Manacor", 1);
         assertTrue(estacion.leerTarjetaUsuario(tarjeta));
     }
-
+    
     @Test
     public void retirarBicicletaTest() {
 
@@ -76,5 +76,5 @@ public class EstacionTest {
         assertEquals(5, estacion.anclajesLibres());
         estacion.retirarBicicleta(tarjeta);
         assertEquals(6, estacion.anclajesLibres());
-    }*/
+    }
 }

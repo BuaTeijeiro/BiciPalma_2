@@ -25,63 +25,63 @@ public class Main {
 
 		System.out.println("anclajesLibres: " + estacion.anclajesLibres());
 
-		//estacion.consultarAnclajes();
+		estacion.consultarAnclajes();
 
 		/**
 		 * caso TEST anclar bicicleta(s) 
 		 */
 
-		//System.out.println("\n **** caso TEST anclar bicicleta(s) **** \n");
+		System.out.println("\n **** caso TEST anclar bicicleta(s) **** \n");
 
-		//int[] bicicletas = { 291, 292, 293, 294 };
+		int[] bicicletas = { 291, 292, 293, 294 };
 		
-		//Bicicleta bicicleta = null;
-		//for (int id : bicicletas) {
-		//	bicicleta = new Bicicleta(id);
-		//	estacion.anclarBicicleta(bicicleta);
-		//}
+		Bicicleta bicicleta = null;
+		for (int id : bicicletas) {
+			bicicleta = new Bicicleta(id);
+			estacion.anclarBicicleta(bicicleta);
+		}
 
-		//System.out.println("anclajes libres tras generar " + bicicletas.length 
-		//					+ " bicis: " + estacion.anclajesLibres());
+		System.out.println("anclajes libres tras generar " + bicicletas.length 
+							+ " bicis: " + estacion.anclajesLibres());
 
 		/**
 		 * Caso TEST consultar bicicletas ancladas 
 		 */
 
-		//System.out.println("\n **** caso TEST consultar bicicletas ancladas **** \n");
+		System.out.println("\n **** caso TEST consultar bicicletas ancladas **** \n");
 
-		//estacion.consultarAnclajes();
+		estacion.consultarAnclajes();
 
 		/** 
 		 * Caso TEST retirar bicicleta 
 		 */
 
-		//System.out.println("\n **** caso TEST retirar bicicleta **** \n");
+		System.out.println("\n **** caso TEST retirar bicicleta **** \n");
 
-		//TarjetaUsuario tarjetaUsuario = new TarjetaUsuario("000456789", true);
+		TarjetaUsuario tarjetaUsuario = new TarjetaUsuario("000456789", true);
 
-		//System.out.println("¿tarjeta de usuario activada? (true/false): " 
-		//					+ estacion.leerTarjetaUsuario(tarjetaUsuario));
+		System.out.println("¿tarjeta de usuario activada? (true/false): " 
+							+ estacion.leerTarjetaUsuario(tarjetaUsuario));
 
-		//estacion.retirarBicicleta(tarjetaUsuario);
+		estacion.retirarBicicleta(tarjetaUsuario);
 
-		//estacion.consultarAnclajes();
+		estacion.consultarAnclajes();
 
-		//System.out.println("anclajesLibres: " + estacion.anclajesLibres());
+		System.out.println("anclajesLibres: " + estacion.anclajesLibres());
 
 		/**
 		 * Caso TEST tarjeta inactiva 
 		 */
 
-		//System.out.println("\n **** caso TEST tarjeta inactiva **** \n");
+		System.out.println("\n **** caso TEST tarjeta inactiva **** \n");
 
-		//tarjetaUsuario.setActivada(false);
+		tarjetaUsuario.setActivada(false);
 
-		//System.out.println("¿tarjeta de usuario activada? (true/false): " 
-		//					+ estacion.leerTarjetaUsuario(tarjetaUsuario));
+		System.out.println("¿tarjeta de usuario activada? (true/false): " 
+							+ estacion.leerTarjetaUsuario(tarjetaUsuario));
 
-		//estacion.retirarBicicleta(tarjetaUsuario);
+		estacion.retirarBicicleta(tarjetaUsuario);
 
-		//estacion.consultarAnclajes();
+		estacion.consultarAnclajes();
 	}
 }
